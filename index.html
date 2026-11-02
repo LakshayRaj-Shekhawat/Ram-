@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="John Doe - Web Developer Portfolio. Crafting dynamic, responsive, and visually stunning web experiences." />
+  <title>John Doe | Web Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">&lt;</span>John<span class="logo-highlight">.Dev</span><span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Pure CSS Mobile Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle mobile menu" />
+      <label for="nav-toggle" class="nav-hamburger">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#timeline" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-cta-btn">Get In Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section container">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-indicator"></span>
+          <span>Available for Freelance &amp; Projects</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">John Doe</span>
+          <span class="wave-emoji">👋</span>
+        </h1>
+        
+        <h2 class="hero-subtitle">
+          Crafting <span class="highlight-underline">Dynamic</span> &amp; <span class="gradient-text-alt">Responsive</span> Web Experiences
+        </h2>
+        
+        <p class="hero-description">
+          Passionate Web Developer with 5 years of hands-on expertise building fast, accessible, and colorful digital interfaces. Currently combining computer science theory with creative web design to turn ideas into reality.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Work</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Client Focus</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring-outer"></div>
+          <div class="avatar-ring-inner"></div>
+          
+          <!-- Modern Geometric Developer Avatar Card -->
+          <div class="avatar-frame">
+            <div class="avatar-initials">JD</div>
+            <div class="avatar-overlay-code">
+              <span class="code-line">&lt;coder /&gt;</span>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon icon-html">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 6l1.6 12L12 22l7.4-4 1.6-12L12 2zm0 2.2l5.9 2.6-1.3 9.8-4.6 2.5-4.6-2.5L6.1 6.8 12 4.2z"/></svg>
+            </div>
+            <div>
+              <div class="badge-title">Semantic</div>
+              <div class="badge-subtitle">HTML5 Standards</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <div class="badge-icon icon-css">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4 5l1.5 13L12 22l6.5-4 1.5-13-8-3zm4.5 5.5l-.2 2.2H9.2l.2 2h6.7l-.6 6-3.5 1.1-3.5-1.1-.3-3.2h2.1l.1 1.4 1.6.5 1.6-.5.2-2H8.8l-.5-6.4h8.2z"/></svg>
+            </div>
+            <div>
+              <div class="badge-title">CSS3 Styling</div>
+              <div class="badge-subtitle">Modern Grid &amp; Flex</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Passion For Clean Code &amp; <span class="gradient-text">Bold Design</span></h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-panel">
+          <div class="card-icon-header">
+            <div class="feature-icon icon-bulb">💡</div>
+            <h3>My Story</h3>
+          </div>
+          <p>
+            I am a passionate web developer with over <strong>5 years of practical experience</strong> crafting dynamic, accessible, and responsive web platforms. My journey started with a fascination for how clean code transforms into interactive visual art on screens of every size.
+          </p>
+          <p>
+            Whether prototyping fresh design systems, fine-tuning CSS layouts with Flexbox and CSS Grid, or optimizing web performance, I focus on delivering seamless digital experiences that leave a lasting impression.
+          </p>
+          
+          <div class="key-traits">
+            <span class="trait-tag">⚡ Fast Learner</span>
+            <span class="trait-tag">🎨 Creative Eye</span>
+            <span class="trait-tag">📱 Mobile-First</span>
+            <span class="trait-tag">🧩 Problem Solver</span>
+          </div>
+        </div>
+
+        <div class="about-card glass-panel">
+          <div class="card-icon-header">
+            <div class="feature-icon icon-academic">🎓</div>
+            <h3>Education &amp; Growth</h3>
+          </div>
+          <p>
+            Currently in my <strong>1st year at XYZ University</strong> pursuing a <strong>Bachelor's degree in Computer Science</strong>. I bridge formal computer science fundamentals—data structures, algorithms, and software engineering—with hands-on web production.
+          </p>
+          <p>
+            I have also completed numerous real-world freelance projects and production internships, transforming real user requirements into fast, intuitive web interfaces.
+          </p>
+
+          <div class="quick-facts">
+            <div class="fact-item">
+              <span class="fact-icon">📍</span>
+              <div>
+                <strong>Degree:</strong>
+                <span>B.S. in Computer Science (1st Year)</span>
+              </div>
+            </div>
+            <div class="fact-item">
+              <span class="fact-icon">🏛️</span>
+              <div>
+                <strong>University:</strong>
+                <span>XYZ University</span>
+              </div>
+            </div>
+            <div class="fact-item">
+              <span class="fact-icon">💼</span>
+              <div>
+                <strong>Experience:</strong>
+                <span>5+ Years (Freelance &amp; Internships)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section container">
+      <div class="section-header">
+        <span class="section-tag">My Toolkit</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Core Competencies</span></h2>
+        <p class="section-subtitle">A balanced fusion of visual presentation, semantic standards, and responsive architecture.</p>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1: HTML5 -->
+        <div class="skill-card glass-panel">
+          <div class="skill-card-top">
+            <div class="skill-icon-bubble color-orange">
+              <span>&lt;/&gt;</span>
+            </div>
+            <div class="skill-meta">
+              <h4>HTML5 Architecture</h4>
+              <span class="skill-level">Semantic &amp; Accessible</span>
+            </div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <p class="skill-desc">Semantic markup, SEO optimization, schema structuring, clean DOM tree, and WCAG accessibility compliance.</p>
+          <div class="progress-track">
+            <div class="progress-bar bar-orange" style="width: 95%;"></div>
+          </div>
+          <div class="skill-pills">
+            <span>Semantic Tags</span>
+            <span>SEO Ready</span>
+            <span>Web Audio/Video</span>
+          </div>
+        </div>
+
+        <!-- Skill 2: CSS3 & Styling -->
+        <div class="skill-card glass-panel">
+          <div class="skill-card-top">
+            <div class="skill-icon-bubble color-blue">
+              <span>{ }</span>
+            </div>
+            <div class="skill-meta">
+              <h4>CSS3 &amp; Modern Styling</h4>
+              <span class="skill-level">Animations &amp; Glassmorphism</span>
+            </div>
+            <span class="skill-percent">92%</span>
+          </div>
+          <p class="skill-desc">CSS Custom Properties, keyframe transitions, multi-layered gradients, glassmorphism, and responsive typography.</p>
+          <div class="progress-track">
+            <div class="progress-bar bar-blue" style="width: 92%;"></div>
+          </div>
+          <div class="skill-pills">
+            <span>CSS Variables</span>
+            <span>Keyframes</span>
+            <span>Gradients</span>
+          </div>
+        </div>
+
+        <!-- Skill 3: Responsive Web Design -->
+        <div class="skill-card glass-panel">
+          <div class="skill-card-top">
+            <div class="skill-icon-bubble color-purple">
+              <span>📱</span>
+            </div>
+            <div class="skill-meta">
+              <h4>Responsive Layouts</h4>
+              <span class="skill-level">Flexbox &amp; CSS Grid</span>
+            </div>
+            <span class="skill-percent">96%</span>
+          </div>
+          <p class="skill-desc">Fluid clamp() sizing, dynamic auto-fit grid cards, mobile-first media queries, and pixel-perfect touch layouts.</p>
+          <div class="progress-track">
+            <div class="progress-bar bar-purple" style="width: 96%;"></div>
+          </div>
+          <div class="skill-pills">
+            <span>CSS Grid</span>
+            <span>Flexbox</span>
+            <span>Mobile-First</span>
+          </div>
+        </div>
+
+        <!-- Skill 4: UI/UX & Visual Design -->
+        <div class="skill-card glass-panel">
+          <div class="skill-card-top">
+            <div class="skill-icon-bubble color-pink">
+              <span>🎨</span>
+            </div>
+            <div class="skill-meta">
+              <h4>UI/UX &amp; Web Design</h4>
+              <span class="skill-level">Aesthetics &amp; Hierarchy</span>
+            </div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <p class="skill-desc">Color harmony, typographic hierarchy, micro-interactions, responsive touch targets, and engaging visual delight.</p>
+          <div class="progress-track">
+            <div class="progress-bar bar-pink" style="width: 88%;"></div>
+          </div>
+          <div class="skill-pills">
+            <span>Color Theory</span>
+            <span>Micro-interactions</span>
+            <span>Wireframing</span>
+          </div>
+        </div>
+
+        <!-- Skill 5: Web Frameworks & Tooling -->
+        <div class="skill-card glass-panel">
+          <div class="skill-card-top">
+            <div class="skill-icon-bubble color-teal">
+              <span>⚡</span>
+            </div>
+            <div class="skill-meta">
+              <h4>Modern Web Ecosystem</h4>
+              <span class="skill-level">Frameworks &amp; Tooling</span>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <p class="skill-desc">Experience with modern web components, modular stylesheets, cross-browser compatibility, and performance auditing.</p>
+          <div class="progress-track">
+            <div class="progress-bar bar-teal" style="width: 85%;"></div>
+          </div>
+          <div class="skill-pills">
+            <span>Cross-Browser</span>
+            <span>Lighthouse 100</span>
+            <span>Performance</span>
+          </div>
+        </div>
+
+        <!-- Skill 6: Computer Science Fundamentals -->
+        <div class="skill-card glass-panel">
+          <div class="skill-card-top">
+            <div class="skill-icon-bubble color-amber">
+              <span>💻</span>
+            </div>
+            <div class="skill-meta">
+              <h4>CS Fundamentals</h4>
+              <span class="skill-level">Academic Core at XYZ Univ</span>
+            </div>
+            <span class="skill-percent">89%</span>
+          </div>
+          <p class="skill-desc">Solid grounding in logic, software engineering principles, algorithm design, clean modular structure, and problem solving.</p>
+          <div class="progress-track">
+            <div class="progress-bar bar-amber" style="width: 89%;"></div>
+          </div>
+          <div class="skill-pills">
+            <span>Algorithms</span>
+            <span>Clean Code</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section container">
+      <div class="section-header">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Selected <span class="gradient-text">Portfolio Projects</span></h2>
+        <p class="section-subtitle">A showcase of dynamic web interfaces built with clean architecture, vivid palettes, and responsive layouts.</p>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass-panel">
+          <div class="project-preview preview-gradient-1">
+            <div class="preview-badge">Featured</div>
+            <div class="preview-illustration">
+              <div class="mockup-window">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-content mockup-shop">
+                  <div class="mockup-card-mini"></div>
+                  <div class="mockup-card-mini"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS Grid</span>
+              <span class="tag">E-Commerce</span>
+            </div>
+            <h3 class="project-title">NovaStore Modern Marketplace</h3>
+            <p class="project-description">
+              A dynamic digital storefront featuring a responsive product grid, pure CSS sliding cart drawer, rich filter pill transitions, and smooth hover elevation cards.
+            </p>
+            <div class="project-links">
+              <a href="#projects" class="project-link project-link-primary">
+                <span>Live Preview</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="#projects" class="project-link project-link-secondary">
+                <span>Source Code</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-panel">
+          <div class="project-preview preview-gradient-2">
+            <div class="preview-badge">SaaS Concept</div>
+            <div class="preview-illustration">
+              <div class="mockup-window">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-content mockup-dash">
+                  <div class="mockup-bar-chart">
+                    <span style="height: 40%"></span>
+                    <span style="height: 75%"></span>
+                    <span style="height: 60%"></span>
+                    <span style="height: 90%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">CSS Animations</span>
+              <span class="tag">Flexbox</span>
+              <span class="tag">Analytics</span>
+            </div>
+            <h3 class="project-title">PulseMetrics Analytics Hub</h3>
+            <p class="project-description">
+              A colorful metrics dashboard with glassmorphism panels, CSS-only bar chart visualizations, gradient KPI counters, and dark-mode focused data presentation.
+            </p>
+            <div class="project-links">
+              <a href="#projects" class="project-link project-link-primary">
+                <span>Live Preview</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="#projects" class="project-link project-link-secondary">
+                <span>Source Code</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-panel">
+          <div class="project-preview preview-gradient-3">
+            <div class="preview-badge">Creative Studio</div>
+            <div class="preview-illustration">
+              <div class="mockup-window">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-content mockup-art">
+                  <div class="mockup-circle"></div>
+                  <div class="mockup-lines"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">UI / UX</span>
+              <span class="tag">CSS Variables</span>
+              <span class="tag">Agency</span>
+            </div>
+            <h3 class="project-title">VividStudio Agency Landing</h3>
+            <p class="project-description">
+              A high-impact landing page design for creative agencies with vibrant mesh gradients, pure CSS accordion navigation, interactive portfolio carousels, and responsive hero headers.
+            </p>
+            <div class="project-links">
+              <a href="#projects" class="project-link project-link-primary">
+                <span>Live Preview</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="#projects" class="project-link project-link-secondary">
+                <span>Source Code</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass-panel">
+          <div class="project-preview preview-gradient-4">
+            <div class="preview-badge">Productivity</div>
+            <div class="preview-illustration">
+              <div class="mockup-window">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-content mockup-kanban">
+                  <div class="kanban-col"></div>
+                  <div class="kanban-col"></div>
+                  <div class="kanban-col"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Semantic HTML</span>
+              <span class="tag">Modular CSS</span>
+              <span class="tag">App UI</span>
+            </div>
+            <h3 class="project-title">FlowBoard Kanban Workspace</h3>
+            <p class="project-description">
+              A responsive task management interface with color-coded priority indicators, smooth card transitions, customized scrollbars, and modular CSS layout architecture.
+            </p>
+            <div class="project-links">
+              <a href="#projects" class="project-link project-link-primary">
+                <span>Live Preview</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="#projects" class="project-link project-link-secondary">
+                <span>Source Code</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="timeline" class="timeline-section container">
+      <div class="section-header">
+        <span class="section-tag">Career &amp; Study</span>
+        <h2 class="section-title">Education &amp; <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">A chronological track of academic rigor and hands-on industry contributions.</p>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot dot-cyan"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-meta">
+              <span class="badge-role">Undergraduate Student</span>
+              <span class="timeline-year">2026 — Present</span>
+            </div>
+            <h3 class="timeline-title">B.S. in Computer Science (1st Year)</h3>
+            <h4 class="timeline-org">XYZ University</h4>
+            <p class="timeline-body">
+              Studying core computer science curriculum covering computational thinking, object-oriented principles, data structures, and algorithms. Actively collaborating with peers on web development society initiatives and hackathons.
+            </p>
+            <div class="timeline-tags">
+              <span>Computer Science</span>
+              <span>Software Engineering</span>
+              <span>XYZ Campus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot dot-purple"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-meta">
+              <span class="badge-role">Freelance Web Developer</span>
+              <span class="timeline-year">2022 — Present</span>
+            </div>
+            <h3 class="timeline-title">Independent Web Consultant &amp; Developer</h3>
+            <h4 class="timeline-org">Self-Employed / Remote</h4>
+            <p class="timeline-body">
+              Delivered custom web designs and frontend architectures for diverse clients worldwide. Translated user requirements into responsive, high-performing websites with accessible semantic HTML, custom CSS styling, and engaging animations.
+            </p>
+            <div class="timeline-tags">
+              <span>Client Delivery</span>
+              <span>Responsive Architecture</span>
+              <span>HTML5 &amp; CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot dot-pink"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-meta">
+              <span class="badge-role">Web Development Intern</span>
+              <span class="timeline-year">2023 — 2024</span>
+            </div>
+            <h3 class="timeline-title">Frontend Development Intern</h3>
+            <h4 class="timeline-org">Tech Innovators Studio</h4>
+            <p class="timeline-body">
+              Collaborated closely with design teams and senior software engineers to refactor legacy styles into modular CSS, improve site performance scores to 90+, and implement cross-browser mobile adaptations.
+            </p>
+            <div class="timeline-tags">
+              <span>Frontend Team</span>
+              <span>Performance Optimization</span>
+              <span>UI Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Ready to Build <span class="gradient-text">Something Great?</span></h2>
+        <p class="section-subtitle">Whether you have a freelance opportunity, an internship, or just want to discuss web design, drop a line!</p>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Box -->
+        <div class="contact-info-card glass-panel">
+          <h3>Contact Details</h3>
+          <p>Feel free to reach out directly through any of these channels. I usually respond within 24 hours.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div>
+                <span class="info-label">Email Me</span>
+                <a href="mailto:johndoe@example.com" class="info-val">johndoe@example.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-val">XYZ University Campus, Tech City</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">💼</div>
+              <div>
+                <span class="info-label">Current Status</span>
+                <span class="info-val color-green">Open to Freelance &amp; Internships</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-wrapper">
+            <span class="social-title">Find Me Online:</span>
+            <div class="social-badges">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="Twitter / X">
+                <span>Twitter / X</span>
+              </a>
+              <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" class="social-btn" title="CodePen">
+                <span>CodePen</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-card glass-panel">
+          <form class="contact-form" action="#" method="POST" onsubmit="return false;">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Opportunity" required class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Hello John, I came across your portfolio and..." required class="form-input form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span>Send Message</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-symbol">&lt;</span>John<span class="logo-highlight">.Dev</span><span class="logo-symbol">/&gt;</span>
+        </a>
+        <p>Creating colorful, accessible, and responsive digital interfaces with only HTML &amp; CSS.</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Education &amp; Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <h4>Colophon</h4>
+        <p>Designed and built purely with <strong>HTML5</strong> and <strong>CSS3</strong>. Zero JavaScript dependencies.</p>
+        <p class="copyright">&copy; 2026 John Doe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
